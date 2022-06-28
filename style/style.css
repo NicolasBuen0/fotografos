@@ -1,0 +1,20 @@
+/* Header */
+
+@import url("header/header.css");
+
+/* Main */
+
+@import url("main/main.css");
+
+/* Sobre */
+@import url("sobre/sobre.css");
+
+/* utilidades */
+
+@import url("utilidades/componentes.css");
+@import url("utilidades/cores.css");
+@import url("utilidades/tipografia.css");
+
+/* reset e configurações globais */
+
+@import url("global.css");
