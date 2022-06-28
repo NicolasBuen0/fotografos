@@ -15,6 +15,11 @@ dd {
     margin: 0px;
 }
 
+h2 {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
 ul {
     padding: 0px;
     list-style: none;

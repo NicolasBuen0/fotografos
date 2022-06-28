@@ -25,21 +25,17 @@ main {
         padding-right: 0px;
         background-color: var(--cor-4);
     }
-
     .introducao-texto {
         padding-left: 20px;
         padding-right: 20px;
         position: absolute;
     }
-
     .introducao-texto h1 {
         color: var(--cor-0);
     }
-
     .introducao-texto p {
         color: var(--cor-0);
     }
-
     /*     .img-home img {
         height: 700px;
     } */

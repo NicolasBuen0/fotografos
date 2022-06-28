@@ -7,7 +7,12 @@
 @import url("main/main.css");
 
 /* Sobre */
+
 @import url("sobre/sobre.css");
+
+/* Galeria imagens */
+
+@import url("galeria/galeria.css");
 
 /* utilidades */
 
