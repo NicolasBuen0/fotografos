@@ -1,3 +1,28 @@
+.galeria h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.galeria.container {
+    padding-top: 60px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btns .btn {
+    background-color: #F0F0F0;
+    color: var(--cor-3);
+    font: 400 0.875rem/1.43 "Roboto", sans-serif;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
 .imagens {
     display: grid;
     gap: 10px;
@@ -13,25 +38,20 @@
 }
 
 @media(max-width:800px) {
+    .galeria.container {
+        padding-top: 0px;
+    }
     .imagens {
         grid-template-columns: 1fr 1fr;
     }
     .imagens img {
         width: 100%;
     }
-    .imagens img:nth-child(2),
-    .imagens img:nth-child(3) {
-        grid-row: 2;
-    }
     .imagens img:nth-child(5) {
         grid-column: 1/2;
     }
     .imagens img:nth-child(6) {
         grid-column: auto;
-    }
-    .galeria.container {
-        padding-left: 0px;
-        padding-right: 0px;
     }
 }
 

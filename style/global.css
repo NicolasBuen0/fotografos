@@ -44,6 +44,7 @@ img {
     font: 400 1.125rem/1.35 Roboto, sans-serif;
     display: inline-block;
     cursor: pointer;
+    border: none;
 }
 
 @media(max-width:800px) {
