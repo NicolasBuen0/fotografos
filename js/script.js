@@ -12,3 +12,27 @@ btnMobile.addEventListener("touchstart", toggleMenu)
 
 /* Animacao */
 new SimpleAnime();
+
+
+/* Galeria */
+
+const btnUrbano  = document.querySelector(".urbano");
+const btnCasal  = document.querySelector(".casal");
+const imagens  = document.querySelectorAll(".imagens img");
+
+function urbano(){
+change(6);
+}
+
+function casal(){
+change(0);
+}
+
+function change(c){
+    imagens.forEach((img)=>{
+    img.src=`img/${++c}.jpg`;
+})
+}
+
+btnUrbano.addEventListener("click", urbano);
+btnCasal.addEventListener("click", casal);
