@@ -23,6 +23,11 @@
     border-radius: 5px;
 }
 
+.btn.ativo {
+    background-color: var(--cor-2);
+    color: var(--cor-0);
+}
+
 .imagens {
     display: grid;
     gap: 10px;

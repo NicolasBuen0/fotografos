@@ -16,23 +16,42 @@ new SimpleAnime();
 
 /* Galeria */
 
-const btnUrbano  = document.querySelector(".urbano");
-const btnCasal  = document.querySelector(".casal");
-const imagens  = document.querySelectorAll(".imagens img");
+const btnUrbano = document.querySelector(".urbano");
+const btnCasal = document.querySelector(".casal");
+const btnMonocromatico = document.querySelector(".monocromatico");
+const btns = document.querySelectorAll(".btns .btn");
+const imagens = document.querySelectorAll(".imagens img");
 
-function urbano(){
-change(6);
+
+
+function casal(event) {
+    change(0, event);
 }
 
-function casal(){
-change(0);
+function urbano(event) {
+    change(6, event);
 }
 
-function change(c){
-    imagens.forEach((img)=>{
-    img.src=`img/${++c}.jpg`;
-})
+function monocromatico(event) {
+    change(12, event);
+}
+
+function change(c, event) {
+    removeClass(event)
+    imagens.forEach((img) => {
+        img.src = `img/${++c}.jpg`;
+    })
+
+    function removeClass(event) {
+        btns.forEach(btn => {
+            btn.classList.remove("ativo");
+        })
+        let btnAtivo = event.currentTarget.classList.add("ativo");
+    }
+
+
 }
 
 btnUrbano.addEventListener("click", urbano);
 btnCasal.addEventListener("click", casal);
+btnMonocromatico.addEventListener("click", monocromatico);
