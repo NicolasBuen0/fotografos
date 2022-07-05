@@ -1,0 +1,51 @@
+.pacotes h2 {
+    padding-bottom: 15px;
+
+}
+
+/* .pacotes.container {
+    max-width: 1400px;
+} */
+
+.pacotes {
+    position: relative;
+}
+
+.pacotes ul {
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+
+.pacotes li {
+    min-width: 260px;
+    width: 420px;
+    background: var(--color-3);
+    /*     padding: 100px 20px 100px 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.pacotes img {
+    padding-bottom: 20px;
+}
+
+.pacotes span {
+    font-weight: 400;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+
+.informacoes {
+    background: #F0F0F0;
+    padding: 20px;
+
+}
+
+.texto-informacoes {
+    padding: 2px 0px;
+    color: var(--color-3);
+}
