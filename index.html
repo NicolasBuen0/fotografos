@@ -121,6 +121,27 @@
             </li>
         </ul>
     </article>
+    <div class="contato-bg grid-2-cl container" id="contato">
+        <div class="contato pb-pt">
+            <div class="link">
+                <h2 class="font-1-xl">CONTATO</h2>
+                <a href="mailto:contato@maymay.com.br" class=" font-2-m" target=" _blank"><img src="icons/email.svg" width="48" height="48">contato@maymay.com.br</a>
+                <a href="tel:+55518521-6499" class=" font-2-m" target=" _blank"><img src="icons/phone.svg">51 8521-6499</a>
+                <a href="mailto:contato@maymay.com.br" class=" font-2-m" target=" _blank"><img src="icons/whats.svg" width="48" height="48">Enviar</a>
+                <a href="mailto:contato@maymay.com.br" class=" font-2-m" target=" _blank"><img src="icons/insta.svg" width="48" height="48">@maymayfotografia</a>
+            </div>
+            <form action="./enviar.php" method="post">
+                <input type="text" placeholder="Seu nome" name="nome" required="">
+                <input type="email" placeholder="Seu email" name="email" required="">
+                <label for="">Mensagem</label>
+                <textarea name="mensagem" cols="30" rows="10" maxlength="800"></textarea>
+                <button class="botao">ENVIAR</button>
+            </form>
+        </div>
+        <div class="img">
+            <img src="img/contato.jpg" alt="Desenvolvendo um site" width="560" height="858">
+        </div>
+    </div>
 
     <script src="js/plugins/simple-anime.js"></script>
     <script src="js/script.js"></script>

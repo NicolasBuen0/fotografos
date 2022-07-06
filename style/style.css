@@ -18,6 +18,10 @@
 
 @import url("pacotes/pacotes.css");
 
+/* Contato */
+
+@import url("contato/contato.css");
+
 /* utilidades */
 
 @import url("utilidades/componentes.css");
