@@ -22,6 +22,10 @@
 
 @import url("contato/contato.css");
 
+/* Footer */
+
+@import url("footer/footer.css");
+
 /* utilidades */
 
 @import url("utilidades/componentes.css");

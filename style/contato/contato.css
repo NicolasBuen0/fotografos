@@ -1,23 +1,12 @@
-.contato-bg.grid-2-cl {
-    gap: 0px;
+.contato.grid-2-cl {
+    gap: 40px;
 }
-
-.contato-bg {
-    background: var(--color-4);
-}
-
-
-/* .contato {
-    padding-left: 20px;
-    padding-right: 20px;
-} */
 
 .link {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 40px;
 }
 
 .link h2 {
@@ -27,23 +16,10 @@
 .link a {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-
-/* .link p:first-child {
-    padding-left: 15px;
-}
-
-
-
-.link a {
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding-bottom: 40px;
-} */
-
-form .botao {
+form .btn {
     align-self: flex-start;
 }
 
@@ -54,7 +30,7 @@ form {
 
 input {
     border: none;
-    border-bottom: 2px solid var(--spotlight);
+    border-bottom: 1px solid var(--cor-4);
     padding: 10px 0px;
     background: transparent;
 }
@@ -63,7 +39,7 @@ input::placeholder,
 label,
 input,
 textarea {
-    color: var(--color-0);
+    color: var(--cor-4);
 }
 
 label {
@@ -78,7 +54,7 @@ textarea {
 
 textarea {
     background: transparent;
-    border: 2px solid var(--spotlight);
+    border: 1px solid var(--cor-4);
     resize: none;
 }
 
@@ -94,6 +70,10 @@ textarea:focus {
     outline: none;
 }
 
+.img {
+    padding-bottom: 90px;
+}
+
 .img img {
     height: 100%;
     object-fit: cover;
@@ -101,7 +81,19 @@ textarea:focus {
 }
 
 @media (max-width: 800px) {
+    .link {
+        grid-template-columns: 1fr 1fr;
+    }
     .img {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .link {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 60px;
     }
 }
