@@ -61,7 +61,7 @@ btnMonocromatico.addEventListener("click", monocromatico);
 /* Animacao containers */
 
 const containers = document.querySelectorAll(".animar");
-const windowHeight = window.innerHeight * 0.6;
+const windowHeight = window.innerHeight * 0.8;
 
 
 function animar() {
