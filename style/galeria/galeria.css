@@ -33,6 +33,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.imagens.ativo {
+    animation: show 5s forwards;
+}
+
 .imagens img:nth-child(5) {
     grid-column: 1/3;
 }
@@ -62,5 +66,14 @@
 @media(max-width:600px) {
     .imagens {
         grid-template-columns: 1fr;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

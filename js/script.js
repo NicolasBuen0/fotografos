@@ -42,17 +42,37 @@ function change(c, event) {
         img.src = `img/${++c}.jpg`;
     })
 
-    function removeClass(event) {
-        btns.forEach(btn => {
-            btn.classList.remove("ativo");
-        })
-        let btnAtivo = event.currentTarget.classList.add("ativo");
-    }
-
-
-
 }
+
+function removeClass(event) {
+    btns.forEach(btn => {
+        btn.classList.remove("ativo");
+    })
+    let btnAtivo = event.currentTarget.classList.add("ativo");
+}
+
+
 
 btnUrbano.addEventListener("click", urbano);
 btnCasal.addEventListener("click", casal);
 btnMonocromatico.addEventListener("click", monocromatico);
+
+
+/* Animacao containers */
+
+const containers = document.querySelectorAll(".animar");
+const windowHeight = window.innerHeight * 0.6;
+
+
+function animar() {
+    containers.forEach((container) => {
+        const topo = container.getBoundingClientRect().top;
+        const telaMetade = topo - windowHeight;
+        if (telaMetade < 0) {
+            container.classList.add("ativo");
+        }
+
+    })
+}
+
+window.addEventListener("scroll", animar);
